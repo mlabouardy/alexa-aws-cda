@@ -24,6 +24,7 @@ type AlexaResponse struct {
 		OutputSpeech     struct {
 			Type string `json:"type"`
 			Text string `json:"text"`
+			SSML string `json:"ssml"`
 		} `json:"outputSpeech"`
 	} `json:"response"`
 	SessionAttributes map[string]interface{} `json:"sessionAttributes"`
@@ -32,11 +33,16 @@ type AlexaResponse struct {
 func CreateResponse() *AlexaResponse {
 	var resp AlexaResponse
 	resp.Version = "1.0"
-	resp.Response.OutputSpeech.Type = "PlainText"
 	return &resp
 }
 
-func (resp *AlexaResponse) Say(text string, shouldEndSession bool) {
-	resp.Response.OutputSpeech.Text = text
+func (resp *AlexaResponse) Say(text string, shouldEndSession bool, speechType string) {
 	resp.Response.ShouldEndSession = shouldEndSession
+	resp.Response.OutputSpeech.Type = speechType
+
+	if speechType == "SSML" {
+		resp.Response.OutputSpeech.SSML = text
+	} else {
+		resp.Response.OutputSpeech.Text = text
+	}
 }

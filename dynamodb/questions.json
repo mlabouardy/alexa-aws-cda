@@ -15,28 +15,28 @@
             {
                 "question": "S3 buckets can contain both encrypted and non-encrypted objects",
                 "answers" : {
-                   "A" : "True",
-                   "B" : "False"
+                   "A" : "False",
+                   "B" : "True"
                 },
-                "correct" : "A"
+                "correct" : "B"
             },
             {
                 "question": "What is the maximum number of S3 buckets by default allowed per AWS account",
                 "answers" : {
-                   "A" : "100",
+                   "A" : "1000",
                    "B" : "50",
-                   "C" : "1000",
+                   "C" : "100",
                    "D" : "150"
                 },
-                "correct" : "A"
+                "correct" : "C"
             },
             {
                 "question": "S3 object key names are stored lexicographically",
                 "answers" : {
-                   "A" : "True",
-                   "B" : "False"
+                   "A" : "False",
+                   "B" : "True"
                 },
-                "correct" : "A"
+                "correct" : "B"
             },
             {
                 "question": "Which object encryption options are available with Amazon S3",
@@ -44,7 +44,7 @@
                    "A" : "Server side encryption using amazon keys",
                    "B" : "Server side encryption using customer keys",
                    "C" : "Client side encryption using customer keys",
-                   "D" : "All of the above"
+                   "D" : "All of the options"
                 },
                 "correct" : "D"
             }
