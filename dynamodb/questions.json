@@ -1,0 +1,410 @@
+[
+    {
+        "category" : "S3",
+        "questions" : [
+            {
+                "question": "In S3 what can be used to delete a large number of objects",
+                "answers" : {
+                   "A" : "QuickDelete",
+                   "B" : "Multi-Object Delete",
+                   "C" : "Multi-S3 Delete",
+                   "D" : "There is no such option available"   
+                },
+                "correct" : "B"
+            },
+            {
+                "question": "S3 buckets can contain both encrypted and non-encrypted objects",
+                "answers" : {
+                   "A" : "True",
+                   "B" : "False"
+                },
+                "correct" : "A"
+            },
+            {
+                "question": "What is the maximum number of S3 buckets by default allowed per AWS account",
+                "answers" : {
+                   "A" : "100",
+                   "B" : "50",
+                   "C" : "1000",
+                   "D" : "150"
+                },
+                "correct" : "A"
+            },
+            {
+                "question": "S3 object key names are stored lexicographically",
+                "answers" : {
+                   "A" : "True",
+                   "B" : "False"
+                },
+                "correct" : "A"
+            },
+            {
+                "question": "Which object encryption options are available with Amazon S3",
+                "answers" : {
+                   "A" : "Server side encryption using amazon keys",
+                   "B" : "Server side encryption using customer keys",
+                   "C" : "Client side encryption using customer keys",
+                   "D" : "All of the above"
+                },
+                "correct" : "D"
+            }
+        ]
+    },
+    {
+        "category" : "EC2",
+        "questions" : [
+            {
+                "question" : "Which API call would best to used to describe an Amazon Machine Image",
+                "answers" : {
+                    "A" : "DescribeImage",
+                    "B" : "DescribeImages",
+                    "C" : "ami-describe-image",
+                    "D" : "ami-describe-images"   
+                 },
+                 "correct" : "B"
+            },
+            {
+                "question" : "You have software on an EC2 instance that needs to access both the private and public IP address of that instance. What's the best way for the software to get that information",
+                "answers" : {
+                    "A" : "Look it up in instance metadata",
+                    "B" : "Look it up in userdata",
+                    "C" : "Use the instance metadata for the private IP and userdata for the public IP",
+                    "D" : "Make a call to the EC2 API"   
+                 },
+                 "correct" : "B"
+            },
+            {
+                "question" : "A user is trying to connect to a running EC2 instance using SSH. However, the user gets an Unprotected Private Key File error. Which of the below mentioned options can be a possible reason for rejection",
+                "answers" : {
+                    "A" : "The user has provided the wrong user name for the OS login",
+                    "B" : "The ppk file used for SSH is read only",
+                    "C" : "The public key file has the wrong permission",
+                    "D" : "The private key file has the wrong file permission"   
+                 },
+                 "correct" : "D"
+            },
+            {
+                "question" : "You need to pass a custom script to new Amazon Linux instances created in your Auto Scaling group. Which feature allows you to accomplish this",
+                "answers" : {
+                    "A" : "AWS Config",
+                    "B" : "IAM Roles",
+                    "C" : "User data",
+                    "D" : "EC2Config Service"   
+                 },
+                 "correct" : "C"
+            },
+            {
+                "question" : "You are deploying an application on Amazon Elastic Cloud Compute that must call AWS APIs. What method of securely passing credentials to the application should you use",
+                "answers" : {
+                    "A" : "Use AWS Identity and Access Management roles for EC2 instances",
+                    "B" : "Embed the API credentials into your JAR files",
+                    "C" : "Pass API credentials to the instance using instance meta data",
+                    "D" : "Store API credentials as an object in Amazon Simple Storage Service"   
+                 },
+                 "correct" : "A"
+            }
+        ]
+    },
+    {
+        "category" : "VPC",
+        "questions" : [
+            {
+                "question" : "What is the hourly rate to run a VPC",
+                "answers" : {
+                    "A" : "0.002 per hour",
+                    "B" : "0.01 per hour",
+                    "C" : "Free",
+                    "D" : "0.05 per hour"   
+                 },
+                 "correct" : "C"
+            },
+            {
+                "question" : "You have multiple instances behind private and public subnets. None of the instances have an Elastic IP assigned to them. How can you connect them to the internet to download system updates",
+                "answers" : {
+                    "A" : "Assign Elastic IP to each instance",
+                    "B" : "Create a NAT instance",
+                    "C" : "Connect to a VPN",
+                    "D" : "Use both NAT instance and VPN"   
+                 },
+                 "correct" : "B"
+            },
+            {
+                "question" : "Can a VPC subnet have multiple route tables",
+                "answers" : {
+                    "A" : "True",
+                    "B" : "False"
+                 },
+                 "correct" : "B"
+            },
+            {
+                "question" : "To connect your remote office to your VPC for internal network access, what would you need to use",
+                "answers" : {
+                    "A" : "VPN",
+                    "B" : "Server",
+                    "C" : "Elastic IP",
+                    "D" : "None of the above"
+                 },
+                 "correct" : "A"
+            },
+            {
+                "question" : "A VPC subnet whose instances cannot be reached from the Internet",
+                "answers" : {
+                    "A" : "Secret subnet",
+                    "B" : "Hidden subnet",
+                    "C" : "Private subnet",
+                    "D" : "Internal subnet"
+                 },
+                 "correct" : "C"
+            }
+        ]
+    },
+    {
+        "category" : "IAM",
+        "questions" : [
+            {
+                "question": "In S3 what can be used to delete a large number of objects",
+                "answers" : {
+                   "A" : "QuickDelete",
+                   "B" : "Multi-Object Delete",
+                   "C" : "Multi-S3 Delete",
+                   "D" : "There is no such option available"   
+                },
+                "correct" : "B"
+            },
+            {
+                "question": "Which statement best describes IAM",
+                "answers" : {
+                   "A" : "IAM allows you to manage users, groups and roles and their corresponding level of access to the AWS platform",
+                   "B" : "IAM allows you to manage users passwords only. AWS staff must create new users for your organization. This is done by raising a ticket",
+                   "C" : "IAM allows you to manage persmissions for AWS resources only",
+                   "D" : "IAM stands for improvised Application Management and it allows you to deploy and manager applications in the AWS Cloud"   
+                },
+                "correct" : "A"
+            },
+            {
+                "question": "Which is not a feature of IAM",
+                "answers" : {
+                   "A" : "Centralised control of your AWS account",
+                   "B" : "Integrates with existing active directory account allowing single sign on",
+                   "C" : "Fine grained access control to AWS resources",
+                   "D" : "Allows you to setup biometric authentication, so that no passwords are required"   
+                },
+                "correct" : "D"
+            },
+            {
+                "question": "SAML stands for Security Assetion Markup Language",
+                "answers" : {
+                   "A" : "True",
+                   "B" : "False" 
+                },
+                "correct" : "A"
+            },
+            {
+                "question": "What is the name of the service to allow users to use their social media account to gain temporary access to the AWS platform",
+                "answers" : {
+                   "A" : "Active Directory",
+                   "B" : "Web Identity Federation",
+                   "C" : "Facebook Messenger API" 
+                },
+                "correct" : "B"
+            }
+        ]
+    },
+    {
+        "category" : "SQS",
+        "questions" : [
+            {
+                "question" : "in IAM what is the representation of a person or service",
+                "answers" : {
+                    "A" : "User",
+                    "B" : "Group",
+                    "C" : "Team",
+                    "D" : "Role"   
+                 },
+                 "correct" : "A"
+            },
+            {
+                "question" : "Which of the following statements is true about SQS standard queues",
+                "answers" : {
+                    "A" : "Messages will be delivered one or more times and messages will be delivered in First in First out order",
+                    "B" : "Messages will be delivered exactly once and message delivery order is inderterminate",
+                    "C" : "Messages will be delivered one or more times and message delivery order is inderterminate",
+                    "D" : "Messages will be delivery exactly once and messages will be delivered in First in, First out order"   
+                 },
+                 "correct" : "C"
+            },
+            {
+                "question" : "How many messages queues can be created in SQS",
+                "answers" : {
+                    "A" : "50",
+                    "B" : "100",
+                    "C" : "200",
+                    "D" : "Unlimited"   
+                 },
+                 "correct" : "D"
+            },
+            {
+                "question" : "How many requests in SQS are available in the free tier",
+                "answers" : {
+                    "A" : "1000",
+                    "B" : "1 million",
+                    "C" : "10000",
+                    "D" : "10 million"   
+                 },
+                 "correct" : "B"
+            },
+            {
+                "question" : "In SQS what is the maximum visibility timeout",
+                "answers" : {
+                    "A" : "1 hour",
+                    "B" : "1 day",
+                    "C" : "12 hours",
+                    "D" : "24 hours"   
+                 },
+                 "correct" : "C"
+            }
+        ]
+    },
+    {
+        "category" : "DynamoDB",
+        "questions" : [
+            {
+                "question" : "In DynamoDB, an atomic counter allows all write requests to be applied in the order they are received by incrementing or decrementing the attribute value",
+                "answers" : {
+                    "A" : "True",
+                    "B" : "False"  
+                 },
+                 "correct" : "A"
+            },
+            {
+                "question" : "Company is writing 10 items to the products table every second. Each item is 15.5 kilobytes in size. What would be the required provisioned write throughput for best performance",
+                "answers" : {
+                    "A" : "10",
+                    "B" : "160",
+                    "C" : "155",
+                    "D" : "16"  
+                 },
+                 "correct" : "B"
+            },
+            {
+                "question" : "In DynamoDB, how many tables can an AWS account have per region",
+                "answers" : {
+                    "A" : "126",
+                    "B" : "256",
+                    "C" : "282",
+                    "D" : "255"  
+                 },
+                 "correct" : "B"
+            },
+            {
+                "question" : "Which API call can be used to retrieve up to 100 items at a time or 1 Megabytes of data from a DynamoDB table",
+                "answers" : {
+                    "A" : "BatchGetItem",
+                    "B" : "GetItem",
+                    "C" : "BatchItem",
+                    "D" : "ChunkGetItem"  
+                 },
+                 "correct" : "A"
+            },
+            {
+                "question" : "For best performance when retrieving data from a table, what type of API call should you perform",
+                "answers" : {
+                    "A" : "Filtered",
+                    "B" : "Scan",
+                    "C" : "Query",
+                    "D" : "Query then Scan"  
+                 },
+                 "correct" : "C"
+            }
+        ]
+    },
+    {
+        "category" : "Route53",
+        "questions" : [
+            {
+                "question" : "You plan to set up DNS failover using Amazon Route 53.  What feature of Route 53 can use to test your web application’s availability and reachability",
+                "answers" : {
+                    "A" : "Private DNS",
+                    "B" : "CloudWatch",
+                    "C" : "Health Checks",
+                    "D" : "DNS Ping"  
+                 },
+                 "correct" : "C"
+            }
+        ]
+    },
+    {
+        "category" : "Elastic Beanstalk",
+        "questions" : [
+            {
+                "question" : "Elastic Beanstalk is object based storage",
+                "answers" : {
+                    "A" : "True",
+                    "B" : "False"  
+                 },
+                 "correct" : "B"
+            },
+            {
+                "question" : "What languages and development stacks is not supported by AWS Elastic Beanstalk",
+                "answers" : {
+                    "A" : "Apache Tomcat",
+                    "B" : "Nginx",
+                    "C" : "Nodejs",
+                    "D" : "Scala"  
+                 },
+                 "correct" : "D"
+            }
+        ]
+    },
+    {
+        "category" : "CloudFormation",
+        "questions" : [
+            {
+                "question" : "Does AWS CloudFomration assume default template version if one is not explicitly mentioned in a CloudFormation template",
+                "answers" : {
+                    "A" : "True",
+                    "B" : "False"  
+                 },
+                 "correct" : "A"
+            },
+            {
+                "question" : "Which section is required for a CloudFormation template to be accepted",
+                "answers" : {
+                    "A" : "Parameters",
+                    "B" : "Template Version",
+                    "C" : "Mappings",
+                    "D" : "Resources"  
+                 },
+                 "correct" : "D"
+            },
+            {
+                "question" : "What is the default behavior of a CloudFormation stack if creation fails",
+                "answers" : {
+                    "A" : "Rollback",
+                    "B" : "Delete",
+                    "C" : "Undo",
+                    "D" : "None of the above, the stack continues creating and the failed resource is ignoredResources"  
+                 },
+                 "correct" : "A"
+            },
+            {
+                "question" : "Can CloudFormation be used with Chef and Puppet",
+                "answers" : {
+                    "A" : "True",
+                    "B" : "False"
+                 },
+                 "correct" : "A"
+            },
+            {
+                "question" : "How much CloudFormation does cost per hour",
+                "answers" : {
+                    "A" : "0.50",
+                    "B" : "0.10",
+                    "C" : "0.15",
+                    "D" : "There is no cost"
+                 },
+                 "correct" : "D"
+            }
+        ]
+    }
+]
