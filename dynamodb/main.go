@@ -34,8 +34,6 @@ type DBItem struct {
 }
 
 func insertToDynamoDB(cfg aws.Config, category string, question Question) error {
-	tableName := os.Getenv("TABLE_NAME")
-
 	item := DBItem{
 		ID:       xid.New().String(),
 		Category: category,
@@ -52,7 +50,7 @@ func insertToDynamoDB(cfg aws.Config, category string, question Question) error 
 
 	svc := dynamodb.New(cfg)
 	req := svc.PutItemRequest(&dynamodb.PutItemInput{
-		TableName: &tableName,
+		TableName: aws.String(os.Getenv("TABLE_NAME")),
 		Item:      av,
 	})
 	_, err = req.Send()
