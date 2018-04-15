@@ -6,7 +6,7 @@
 # How it works
 
 <p>
-  <img src="alexa.png" />
+  <img src="quiz.png" />
 </p>
 
 # Maintainers
