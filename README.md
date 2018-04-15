@@ -5,4 +5,14 @@
 
 # How it works
 
+<p>
+  <img src="alexa.png" />
+</p>
 
+# Maintainers
+
+Mohamed Labouardy
+
+# License
+
+MIT
