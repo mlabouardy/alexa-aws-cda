@@ -1,0 +1,195 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "aws developer quiz",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "Begin",
+                    "slots": [],
+                    "samples": [
+                        "Begin",
+                        "Begin quiz",
+                        "Start",
+                        "Start quiz"
+                    ]
+                },
+                {
+                    "name": "ServiceChoice",
+                    "slots": [
+                        {
+                            "name": "choice",
+                            "type": "LETTER"
+                        }
+                    ],
+                    "samples": [
+                        "Service {choice}",
+                        "Topic {choice}"
+                    ]
+                },
+                {
+                    "name": "AnswerChoice",
+                    "slots": [
+                        {
+                            "name": "choice",
+                            "type": "LETTER"
+                        }
+                    ],
+                    "samples": [
+                        "Answer {choice}",
+                        "Answer is {choice}",
+                        "The answer to the question is {choice}"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "LETTER",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "Z"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Y"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "X"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "W"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "V"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "U"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "T"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "S"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "R"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Q"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "P"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "O"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "N"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "M"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "L"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "K"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "J"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "I"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "H"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "G"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "F"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "E"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "D"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "C"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "B"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "A"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
