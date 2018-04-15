@@ -9,6 +9,35 @@
   <img src="quiz.png" />
 </p>
 
+# IAM Policy
+
+```
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "1",
+            "Effect": "Allow",
+            "Action": [
+                "logs:CreateLogStream",
+                "logs:CreateLogGroup",
+                "logs:PutLogEvents"
+            ],
+            "Resource": "*"
+        },
+        {
+            "Sid": "2",
+            "Effect": "Allow",
+            "Action": "dynamodb:Scan",
+            "Resource": [
+                "arn:aws:dynamodb:us-east-1:ACCOUNT_ID:table/Questions/index/ID",
+                "arn:aws:dynamodb:us-east-1:ACCOUNT_ID:table/Questions"
+            ]
+        }
+    ]
+}
+```
+
 # Maintainers
 
 Mohamed Labouardy
