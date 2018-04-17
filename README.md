@@ -9,6 +9,10 @@
   <img src="quiz.png" />
 </p>
 
+# Usage
+
+* [Become AWS Certified Developer with Alexa](https://medium.com/@mlabouardy/become-aws-certified-developer-with-alexa-44a565012765)
+
 # IAM Policy
 
 ```
